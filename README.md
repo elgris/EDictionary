@@ -1,4 +1,4 @@
-EDictionary
+EDictionary (PHP)
 ===========
 
 PHP module to translate words from one language into another.

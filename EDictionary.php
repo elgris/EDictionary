@@ -50,7 +50,7 @@ class EDictionary
         if (is_string($adapter)) {
             $adapter = ucfirst($adapter);
             if (!isset($this->_adapters[$adapter])) {
-                $adapterName = static::ADAPTER_CLASS_PREFIX . $adapter;
+                $adapterName = self::ADAPTER_CLASS_PREFIX . $adapter;
                 $this->_adapters[$adapter] = new $adapterName(null, $direction);
             }
             $adapter = $this->_adapters[$adapter];

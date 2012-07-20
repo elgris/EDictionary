@@ -135,7 +135,7 @@ class ETAdapterYandexDict extends ETAdapterAbstract {
      * @return string
      */
     protected function _unwrapResponse($response) {
-        $startPosition = strlen(static::WRAPWORD);
+        $startPosition = strlen(self::WRAPWORD);
         $symbolsToExtract = strlen($response) - $startPosition - 1;
         return substr($response, $startPosition, $symbolsToExtract);
     }
